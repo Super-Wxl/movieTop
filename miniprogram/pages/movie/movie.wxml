@@ -1,0 +1,29 @@
+<!--pages/movie/movie.wxml-->
+<view class="container">
+    <view class="header">
+        <van-search class="search" value="{{ value }}" shape="round" background="#4fc08d" placeholder="请输入搜索关键词"/>
+    </view>
+    <view class="content">
+        <view class="movieList">
+            <view class="movie-left">
+                <!-- 电影图片 -->
+                <image></image>
+            </view>
+            <view class="movie-right">
+                <!-- 电影名 -->
+                <text class="name">肖申克的救赎</text>
+                <!-- 国家 -->
+                <text class="country">美国</text>
+                <!-- 类型 -->
+                <text class="genre">犯罪/剧情</text>
+                <!-- 上映时间 -->
+                <text class="dateReleased">1994-09-10</text>
+                <!-- 评分 -->
+                <view>
+                    <view class="doubanRating">9.7</view>
+                    <van-rate value="{{ value }}" size="{{ 25 }}" color="#ffd21e" void-icon="star" void-color="#eee" bind:change="onChange"/>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

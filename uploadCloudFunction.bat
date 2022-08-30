@@ -1,0 +1,1 @@
+"F:\Wechart_Dev\微信web开发者工具\cli.bat" cloud functions deploy --e cloud1-7ghjrtgtd02ce6ff --n quickstartFunctions --r --project "H:\wxProj\movietop" --report_first --report
